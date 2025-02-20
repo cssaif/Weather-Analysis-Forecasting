@@ -1,7 +1,3 @@
-# 1️⃣ Feature Engineering: Add Humidity²
-weather_data <- weather_data %>%
-  mutate(humidity_squared = relative_humidity_2m^2)
-
 set.seed(123)  # Ensure reproducibility
 train_indices <- sample(nrow(weather_data), 0.8 * nrow(weather_data))
 train_data <- weather_data[train_indices, ]
